@@ -1,11 +1,12 @@
 //Age Category 
+var prompt = require("prompt-sync")();
 
-let age = 16;
+let age = prompt("what's your age" );
 
-if (age <= 12) {
+if (age < 12) {
     console.log("child");
-}else if (age >= 13 && age <= 19) {
+}else if (age >= 12 && age <= 20) {
     console.log("Teenager");
-}else if (age >= 20) {
+}else if (age > 20) {
     console.log("Adult");
 }
